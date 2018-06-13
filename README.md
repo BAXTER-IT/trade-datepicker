@@ -13,6 +13,16 @@ Online demo is [here](http://kekeh.github.io/mydatepicker)
 
 If you want to set own styles to the input box, the calendar and the clear buttons you can try [this](https://github.com/kekeh/ngx-mydatepicker)
 attribute directive date picker.
+## Build Bundle
+will create a npmdist folder
+
+__npm run build.dist__ 
+
+## Run Sampleapp
+
+1. __cd sampleapp__
+2. __npm start__ 
+
 
 ## Installation
 
