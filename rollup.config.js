@@ -2,7 +2,7 @@ export default {
     entry: 'npmdist/dist/index.js',
     dest: 'npmdist/bundles/mydatepicker.umd.js',
     format: 'umd',
-    moduleName: 'baxterdatepicker',
+    moduleName: 'trade-datepicker',
     sourceMap: true,
     globals: {
         '@angular/core': 'ng.core',

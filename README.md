@@ -23,12 +23,16 @@ __npm run build.dist__
 1. __cd sampleapp__
 2. __npm start__ 
 
+## Publish new release to NPM
+1.__npm login__
+2.__npm publish__
+
 
 ## Installation
 
 To install this component to an external project, follow the procedure:
 
-1. __npm install mydatepicker --save__
+1. __npm install trade-datepicker --save__
 
 2. Add __MyDatePickerModule__ import to your __@NgModule__ like example below
     ```ts
