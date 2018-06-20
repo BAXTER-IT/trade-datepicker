@@ -1,3 +1,5 @@
+
+
 <div class="mydp" [ngStyle]="{'width': opts.showInputField ? opts.width : null, 'border': opts.inline ? 'none' : null}">
     <div class="selectiongroup" *ngIf="!opts.inline">
         <input *ngIf="opts.showInputField" #inputBoxEl ngtype="text" class="selection" [attr.aria-label]="opts.ariaLabelInputField" (click)="opts.openSelectorOnInputClick&&!opts.editableDateField&&openBtnClicked()" [ngClass]="{'invaliddate': invalidDate&&opts.indicateInvalidDate, 'inputnoteditable': opts.openSelectorOnInputClick&&!opts.editableDateField, 'selectiondisabled': opts.componentDisabled}"
@@ -18,7 +20,12 @@
             </button>
         </div>
     </div>
+
+
     <div class="selector" #selectorEl [ngStyle]="{'width': opts.selectorWidth, 'height' : opts.selectorHeight, 'bottom': getSelectorTopPosition()}" *ngIf="showSelector||opts.inline" [mydpfocus]="opts.inline?'0':'1'" [ngClass]="{'inlinedp': opts.inline, 'alignselectorright': opts.alignSelectorRight, 'selectorarrow': opts.showSelectorArrow&&!opts.inline, 'selectorarrowleft': opts.showSelectorArrow&&!opts.alignSelectorRight&&!opts.inline, 'selectorarrowright': opts.showSelectorArrow&&opts.alignSelectorRight&&!opts.inline}" (keyup)="onCloseSelector($event)" tabindex="0">
+
+
+
         <table class="header">
             <tr>
                 <td>
@@ -47,8 +54,14 @@
                 </td>
             </tr>
         </table>
+
+
+
+
         <table class="caltable" *ngIf="!selectMonth&&!selectYear">
+
             <thead><tr><th class="weekdaytitle weekdaytitleweeknbr" *ngIf="opts.showWeekNumbers&&opts.firstDayOfWeek==='mo'">#</th><th class="weekdaytitle" scope="col" *ngFor="let d of weekDays">{{d}}</th></tr></thead>
+
             <tbody> 
                 <tr *ngFor="let w of dates">
                     <td class="daycell daycellweeknbr" *ngIf="opts.showWeekNumbers&&opts.firstDayOfWeek==='mo'">{{w.weekNbr}}</td>
@@ -76,6 +89,23 @@
                 </tr>
             </tbody>
         </table>
+
+        <table class="tbuttons">
+            <tr>
+                <td class="buttons-inner d-flex align-items-start">
+
+                    <div *ngFor="let rows of opts.rightButtons">
+            <span *ngFor="let btn of rows.btns">
+                <button title="{{btn.title}}" class="{{btn.style}}" (click)="onBtnClicked(btn.date);$event.stopPropagation()">{{btn.label}}</button>
+            </span>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+
+
+
         <table class="monthtable" *ngIf="selectMonth">
             <tbody>
                 <tr *ngFor="let mr of months">
@@ -104,10 +134,10 @@
                 </tr>
             </tbody>
         </table>
-        <div *ngFor="let rows of opts.rightButtons" style="float:left">
-            <span *ngFor="let btn of rows.btns">
-                <button title="{{btn.title}}" class="{{btn.style}}" (click)="onBtnClicked(btn.date);$event.stopPropagation()">{{btn.label}}</button>
-            </span>
-        </div>
     </div>
-</div>
+
+
+
+
+
+
