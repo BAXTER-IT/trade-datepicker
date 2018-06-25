@@ -93,11 +93,12 @@
         <table class="tbuttons">
             <tr>
                 <td class="buttons-inner d-flex align-items-start">
-
+                    <!-- beállított sorokon megy végig -->
                     <div *ngFor="let rows of opts.rightButtons">
-            <span *ngFor="let btn of rows.btns">
-                <button title="{{btn.title}}" class="{{btn.style}}" (click)="onBtnClicked(btn.date);$event.stopPropagation()">{{btn.label}}</button>
-            </span>
+                        <!-- egy sorba kerülö gombokat rakja ki -->
+                        <span *ngFor="let btn of rows.btns">
+                            <button title="{{btn.title}}" class="{{btn.style}}" (click)="onBtnClicked(btn.date);$event.stopPropagation()">{{btn.label}}</button>
+                        </span>
                     </div>
 
                 </td>
