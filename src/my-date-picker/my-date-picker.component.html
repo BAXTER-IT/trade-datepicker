@@ -90,17 +90,17 @@
             </tbody>
         </table>
 
-        <table class="tbuttons">
+        <table class="tbuttons" *ngIf="opts.rightButtons.lenght > 0">
             <tr>
                 <td class="buttons-inner d-flex align-items-start flex-column">
                     <!-- beállított sorokon megy végig -->
-                    <div *ngFor="let rows of opts.rightButtons">
+                    <div *ngFor="let rows of opts.rightButtons" class="{{rows.style}}">
+
                         <!-- egy sorba kerülö gombokat rakja ki -->
                         <span *ngFor="let btn of rows.btns">
                             <button title="{{btn.title}}" class="{{btn.style}}" (click)="onBtnClicked(btn.date);$event.stopPropagation()">{{btn.label}}</button>
                         </span>
                     </div>
-
                 </td>
             </tr>
         </table>

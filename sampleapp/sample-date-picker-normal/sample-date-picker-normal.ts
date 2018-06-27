@@ -79,36 +79,124 @@ export class SampleDatePickerNormal implements OnInit {
             {
                 btns: [
                     {
-                        date: {year: 2018, month: 6, day: 7},
-                        label: 'BTN1',
-                        title: 'Elek rollover title',
-                        style: 'someStyle'
+                        date: {year: 2018, month: 6, day: 12},
+                        label: 'TOD',
+                        title: 'TOD rollover title',
+                        style: 'mdButton'
                     },
+
                     {
-                        date: {year: 2018, month: 6, day: 8},
-                        label: 'BTN2',
-                        title: 'Kal rollover title',
-                        style: 'someStyle2'
+                        date: {year: 2018, month: 6, day: 12},
+                        label: 'TOM',
+                        title: 'TOM rollover title',
+                        style: 'mdButton'
+                    },
+
+                ],
+            },
+            {
+                btns: [
+                    {
+                        date: {year: 2018, month: 6, day: 7},
+                        label: 'SPOT',
+                        title: 'SPOT rollover title',
+                        style: 'lgButton'
                     },
                 ],
-                style: 'SomeRowStyle'
             },
             {
                 btns: [
                     {
                         date: {year: 2018, month: 6, day: 12},
-                        label: '0.5W',
-                        title: '0.5 W rollover title',
-                        style: 'someStyle'
+                        label: '1W',
+                        title: '1 W rollover title',
+                        style: 'smButton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
-                        label: '1W',
-                        title: '1W rollover title',
-                        style: 'someStyle2'
+                        label: '2W',
+                        title: '2W rollover title',
+                        style: 'smButton'
+                    },
+                    {
+                        date: {year: 2018, month: 6, day: 13},
+                        label: '3W',
+                        title: '3W rollover title',
+                        style: 'smButton'
+                    },
+                    {
+                        date: {year: 2018, month: 6, day: 13},
+                        label: '1M',
+                        title: '1M rollover title',
+                        style: 'smButton'
+                    },
+                    {
+                        date: {year: 2018, month: 6, day: 13},
+                        label: '2M',
+                        title: '2M rollover title',
+                        style: 'smButton'
+                    },
+                    {
+                        date: {year: 2018, month: 6, day: 13},
+                        label: '3M',
+                        title: '3M rollover title',
+                        style: 'smButton'
+                    },
+                    {
+                        date: {year: 2018, month: 6, day: 13},
+                        label: '4M',
+                        title: '4M rollover title',
+                        style: 'smButton'
+                    },
+                    {
+                        date: {year: 2018, month: 6, day: 13},
+                        label: '5M',
+                        title: '5M rollover title',
+                        style: 'smButton'
+                    },
+                    {
+                        date: {year: 2018, month: 6, day: 13},
+                        label: '6M',
+                        title: '6M rollover title',
+                        style: 'smButton'
+                    },
+                    {
+                        date: {year: 2018, month: 6, day: 13},
+                        label: '7M',
+                        title: '7M rollover title',
+                        style: 'smButton'
+                    },
+                    {
+                        date: {year: 2018, month: 6, day: 13},
+                        label: '8M',
+                        title: '8M rollover title',
+                        style: 'smButton'
+                    },
+                    {
+                        date: {year: 2018, month: 6, day: 13},
+                        label: '9M',
+                        title: '9M rollover title',
+                        style: 'smButton'
+                    },
+                    {
+                        date: {year: 2018, month: 6, day: 13},
+                        label: '10M',
+                        title: '10M rollover title',
+                        style: 'smButton'
+                    },
+                    {
+                        date: {year: 2018, month: 6, day: 13},
+                        label: '11M',
+                        title: '11M rollover title',
+                        style: 'smButton'
+                    },
+                    {
+                        date: {year: 2018, month: 6, day: 13},
+                        label: '1Y',
+                        title: '1Y rollover title',
+                        style: 'smButton'
                     },
                 ],
-                style: 'SomeRow2Style'
             }
         ],
         satHighlight: false,
