@@ -122,7 +122,7 @@ export class SampleDatePickerNormal implements OnInit {
                         date: {year: 2018, month: 6, day: 13},
                         label: '3W',
                         title: '3W rollover title',
-                        style: 'smButton'
+                        style: 'smButton redbutton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},

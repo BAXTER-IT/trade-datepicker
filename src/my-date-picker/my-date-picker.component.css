@@ -1,52 +1,3 @@
-
-.tbuttons {
-    position: absolute;
-    margin-left: 250px !important;
-    margin-top: -231px !important;
-    width: 202px;
-    height: 232px;
-    background-color: #E8F4F8;
-    border: 1px solid #ADD8E6 !important;
-    font-size: 18px;
-    }
-
-
-.smButton {
-    width: 60px !important;
-    }
-
-.mdButton {
-    width: 92px !important;
-    padding-top: 6px !important;
-    padding-bottom: 6px !important;
-    }
-
-.lgButton {
-    width: 190px !important;
-    padding-top: 12px !important;
-    padding-bottom: 11px !important;
-    }
-
-.tbuttons button {
-    margin-bottom: 4px;
-    /* margin: 2px;
-    width: 75px;
-     float: left !important;
-    padding-left: 3px;
-    padding-right: 3px;  */
-    }
-
-
-.tbuttons button:hover{
-    cursor: pointer;
-    }
-
-.buttons-inner {
-    padding: 5px 0 0 5px !important;
-    }
-
-
-
 .mydp {
     line-height: 1.1;
     display: inline-block;
@@ -109,6 +60,7 @@
     border: 1px solid #CCC;
     z-index: 100;
     animation: selectorfadein 0.1s;
+   // margin-left: -160px;
 }
 
 .mydp .selector:focus {
