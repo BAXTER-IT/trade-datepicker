@@ -98,7 +98,7 @@
 
                         <!-- egy sorba kerülö gombokat rakja ki -->
                         <span *ngFor="let btn of rows.btns">
-                            <button title="{{btn.title}}" class="{{btn.style}}" (click)="onBtnClicked(btn.date);$event.stopPropagation()">{{btn.label}}</button>
+                            <button title="{{btn.title}}" class="{{btn.style}}" (click)="onBtnClicked(btn.date);$event.stopPropagation()" [disabled]="!btn.date">{{btn.label}}</button>
                         </span>
                     </div>
                 </td>
