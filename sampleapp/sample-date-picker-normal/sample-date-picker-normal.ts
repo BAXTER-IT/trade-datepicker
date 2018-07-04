@@ -45,14 +45,12 @@ export class SampleDatePickerNormal implements OnInit {
                     {
                         date: {year: 2018, month: 6, day: 7},
                         label: '1W',
-                        code: '1W',
                         style: 'labelStyle',
                         title: '1W title'
                     },
                     {
                         date: {year: 2018, month: 6, day: 10},
                         label: '2W',
-                        code: '2W',
                         style: 'labelStyle',
                         title: '2W title'
                     }
@@ -83,7 +81,6 @@ export class SampleDatePickerNormal implements OnInit {
                     {
                         date: {year: 2018, month: 6, day: 12},
                         label: 'TOD',
-                        code: 'TOD',
                         title: 'TOD rollover title',
                         style: 'mdButton'
                     },
@@ -102,7 +99,6 @@ export class SampleDatePickerNormal implements OnInit {
                     {
                         date: {year: 2018, month: 6, day: 7},
                         label: 'SPOT',
-                        code: 'SPOT',
                         title: 'SPOT rollover title',
                         style: 'lgButton'
                     },
@@ -113,105 +109,90 @@ export class SampleDatePickerNormal implements OnInit {
                     {
                         date: {year: 2018, month: 6, day: 12},
                         label: '1W',
-                        code: '1W',
                         title: '1 W rollover title',
                         style: 'smButton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '2W',
-                        code: '2W',
                         title: '2W rollover title',
                         style: 'smButton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '3W',
-                        code: '3W',
                         title: '3W rollover title',
                         style: 'smButton redbutton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '1M',
-                        code: '1M',
                         title: '1M rollover title',
                         style: 'smButton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '2M',
-                        code: '2M',
                         title: '2M rollover title',
                         style: 'smButton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '3M',
-                        code: '3M',
                         title: '3M rollover title',
                         style: 'smButton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '4M',
-                        code: '4M',
                         title: '4M rollover title',
                         style: 'smButton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '5M',
-                        code: '5M',
                         title: '5M rollover title',
                         style: 'smButton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '6M',
-                        code: '6M',
                         title: '6M rollover title',
                         style: 'smButton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '7M',
-                        code: '7M',
                         title: '7M rollover title',
                         style: 'smButton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '8M',
-                        code: '8M',
                         title: '8M rollover title',
                         style: 'smButton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '9M',
-                        code: '9M',
                         title: '9M rollover title',
                         style: 'smButton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '10M',
-                        code: '10M',
                         title: '10M rollover title',
                         style: 'smButton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '11M',
-                        code: '11M',
                         title: '11M rollover title',
                         style: 'smButton'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '1Y',
-                        code: '1Y',
                         title: '1Y rollover title',
                         style: 'smButton'
                     },
