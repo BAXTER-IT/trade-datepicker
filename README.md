@@ -264,7 +264,7 @@ Value of the __options__ attribute is a type of [IMyDpOptions](https://github.co
 | __ariaLabelNextMonth__   | Next Month | string | Aria label text of next month button. |
 | __ariaLabelPrevYear__   | Previous Year | string | Aria label text of previous year button. |
 | __ariaLabelNextYear__   | Next Year | string | Aria label text of next year button. |
-| __labelDates*__   | no default value | Array<[IMyLabeledDates](https://github.com/BAXTER-IT/trade-datepicker/blob/master/src/my-date-picker/interfaces/my-labeled-dates.interface.ts)> | Mark dates with spec. label/title. For example: [{dates: [ { date: {year: 2018, month: 6, day: 7},label: '1W', style: 'labelStyle' },{date: {year: 2018, month: 6, day: 10},label: '2W',style: 'labelStyle', title: '2W title'}]}]. To reset existing labelDates value set empty array to it. |
+| __labelDates*__   | no default value | Array<[IMyLabeledDates](https://github.com/BAXTER-IT/trade-datepicker/blob/master/src/my-date-picker/interfaces/my-labeled-dates.interface.ts)> | Mark dates with spec. label/title. For example: [{dates: [ { date: {year: 2018, month: 6, day: 7},label: '1W',code: '1W', style: 'labelStyle' },{date: {year: 2018, month: 6, day: 10},label: '2W',code: '2W',style: 'labelStyle', title: '2W title'}]}]. To reset existing labelDates value set empty array to it. |
 | __holidayDates*__   | no default value | Array<[IMyHolidayDates](https://github.com/BAXTER-IT/trade-datepicker/blob/master/src/my-date-picker/interfaces/my-holiday-dates.interface.ts)> | Mark dates with color, enable/disable selection. For example: [{dates: [{date: {year: 2018, month: 6, day: 13},title: 'USD Holiday',style: 'orangecolor',disabled: false},{date: {year: 2018, month: 6, day: 15},title: 'EUR Holiday',style: 'orangecolor',disabled: true}]}]. To reset existing holidayDates value set empty array to it. |
 | __rightButtons*__   | no default value | Array<[IMyBTNRow](https://github.com/BAXTER-IT/trade-datepicker/blob/master/src/my-date-picker/interfaces/my-right-btn.interface.ts)> | put special buttons next to calendar.
 
@@ -283,12 +283,14 @@ Value of the __options__ attribute is a type of [IMyDpOptions](https://github.co
                       {
                           date: {year: 2018, month: 6, day: 7},
                           label: '1W',
+                          code: '1W',
                           style: 'labelStyle',
                           title: '1W title'
                       },
                       {
                           date: {year: 2018, month: 6, day: 10},
                           label: '2W',
+                          code: '2W',
                           style: 'labelStyle',
                           title: '2W title'
                       }
@@ -301,12 +303,14 @@ Value of the __options__ attribute is a type of [IMyDpOptions](https://github.co
                 {
                     date: {year: 2018, month: 6, day: 13},
                     title: 'USD Holiday',
+                    code: 'USD Holiday',
                     style: 'orangecolor',
                     disabled: false
                 },
                 {
                     date: {year: 2018, month: 6, day: 15},
                     title: 'EUR Holiday',
+                    code: 'EUR Holiday',
                     style: 'orangecolor',
                     disabled: true
                 }
@@ -319,12 +323,14 @@ Value of the __options__ attribute is a type of [IMyDpOptions](https://github.co
                     {
                         date: {year: 2018, month: 6, day: 7},
                         label: 'BTN1',
+                        code: 'BTN1',
                         title: 'rollover title',
                         style: 'someStyle'
                     },
                     {
                         date: {year: 2018, month: 6, day: 8},
                         label: 'BTN2',
+                        code: 'BTN2',
                         title: 'Kal rollover title',
                         style: 'someStyle2'
                     },
@@ -336,12 +342,14 @@ Value of the __options__ attribute is a type of [IMyDpOptions](https://github.co
                     {
                         date: {year: 2018, month: 6, day: 12},
                         label: '0.5W',
+                        code: '0.5W',
                         title: '0.5 W rollover title',
                         style: 'someStyle'
                     },
                     {
                         date: {year: 2018, month: 6, day: 13},
                         label: '1W',
+                        code: '1W',
                         title: '1W rollover title',
                         style: 'someStyle2'
                     },
