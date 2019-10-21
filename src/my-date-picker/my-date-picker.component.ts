@@ -146,6 +146,7 @@ export class MyDatePicker implements OnChanges, ControlValueAccessor, OnDestroy 
         labelDates: <Array<IMyLabeledDates>> [],
         holidayDates: <Array<IMyHolidayDates>> [],
         rightButtons: <Array<IMyBTNRow>> [],
+        showCalendarIcon: <boolean> true
     };
 
     constructor(public elem: ElementRef, private renderer: Renderer, private cdr: ChangeDetectorRef, private localeService: LocaleService, private utilService: UtilService) {

@@ -68,6 +68,7 @@ export interface IMyOptions {
     rightButtons?: Array<IMyBTNRow>;
     labelDates?: Array<IMyLabeledDates>;
     holidayDates?: Array<IMyHolidayDates>;
+    showCalendarIcon?: boolean;
 }
 
 export interface IMyDpOptions extends IMyOptions {}
