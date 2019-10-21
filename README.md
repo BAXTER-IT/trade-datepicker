@@ -25,7 +25,8 @@ __npm run build.dist__
 
 ## Publish new release to NPM
 1.__npm login__
-2.__npm publish__
+2.enter into npmdist folder
+3.__npm publish__
 
 
 ## Installation
