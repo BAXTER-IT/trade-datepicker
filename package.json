@@ -1,6 +1,10 @@
 {
   "name": "trade-datepicker",
+<<<<<<< HEAD
   "version": "2.6.19",
+=======
+  "version": "2.6.17",
+>>>>>>> parent of 64521e4... don't show clear button, input field if showCalendarIcon is false
   "description": "Angular date picker",
   "keywords": [
     "Angular",
