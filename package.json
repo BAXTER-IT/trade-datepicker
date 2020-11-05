@@ -1,10 +1,14 @@
 {
   "name": "trade-datepicker",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "2.6.19",
 =======
   "version": "2.6.17",
 >>>>>>> parent of 64521e4... don't show clear button, input field if showCalendarIcon is false
+=======
+  "version": "2.6.18",
+>>>>>>> parent of b78379b... remove renderer
   "description": "Angular date picker",
   "keywords": [
     "Angular",
@@ -29,14 +33,12 @@
   "main": "bundles/mydatepicker.umd.js",
   "typings": "index.d.ts",
   "module": "index.js",
-  "dependencies": {
-    "@angular-devkit/schematics": "^10.2.0",
-    "@angular/core": "2.2.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@angular/common": "2.2.4",
     "@angular/compiler": "2.2.4",
     "@angular/compiler-cli": "2.2.4",
+    "@angular/core": "2.2.4",
     "@angular/forms": "2.2.4",
     "@angular/platform-browser": "2.2.4",
     "@angular/platform-browser-dynamic": "2.2.4",
