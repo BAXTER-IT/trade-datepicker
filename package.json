@@ -1,6 +1,6 @@
 {
   "name": "trade-datepicker",
-  "version": "2.6.18",
+  "version": "2.6.19",
   "description": "Angular date picker",
   "keywords": [
     "Angular",
@@ -25,12 +25,14 @@
   "main": "bundles/mydatepicker.umd.js",
   "typings": "index.d.ts",
   "module": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@angular-devkit/schematics": "^10.2.0",
+    "@angular/core": "2.2.4"
+  },
   "devDependencies": {
     "@angular/common": "2.2.4",
     "@angular/compiler": "2.2.4",
     "@angular/compiler-cli": "2.2.4",
-    "@angular/core": "2.2.4",
     "@angular/forms": "2.2.4",
     "@angular/platform-browser": "2.2.4",
     "@angular/platform-browser-dynamic": "2.2.4",
