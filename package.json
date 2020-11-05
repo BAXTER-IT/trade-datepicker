@@ -2,10 +2,14 @@
   "name": "trade-datepicker",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "2.6.19",
 =======
   "version": "2.6.17",
 >>>>>>> parent of 64521e4... don't show clear button, input field if showCalendarIcon is false
+=======
+  "version": "2.6.18",
+>>>>>>> parent of b78379b... remove renderer
 =======
   "version": "2.6.18",
 >>>>>>> parent of b78379b... remove renderer
