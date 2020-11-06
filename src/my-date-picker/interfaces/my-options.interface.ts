@@ -5,7 +5,6 @@ import { IMyDateRange } from "./my-date-range.interface";
 import { IMyMarkedDates } from "./my-marked-dates.interface";
 import { IMyMarkedDate } from "./my-marked-date.interface";
 import { IMyLabeledDates } from "./my-labeled-dates.interface";
-import { IMyLabeledDate } from "./my-labeled-date.interface";
 import { IMyBTNRow } from "./my-right-btn-row.interface";
 import { IMyHolidayDates } from "./my-holiday-dates.interface";
 
@@ -65,6 +64,7 @@ export interface IMyOptions {
     ariaLabelNextMonth?: string;
     ariaLabelPrevYear?: string;
     ariaLabelNextYear?: string;
+    ariaLabelDay?: string;
     rightButtons?: Array<IMyBTNRow>;
     labelDates?: Array<IMyLabeledDates>;
     holidayDates?: Array<IMyHolidayDates>;
