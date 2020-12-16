@@ -43,6 +43,7 @@ export {IMyWeekday} from "./lib/interfaces/my-weekday.interface";
 export {IMyStyles} from "./lib/interfaces/my-styles.interface";
 export {IMyDivHostElement} from "./lib/interfaces/my-div-host-element.interface";
 export {IMyCalendarAnimation} from "./lib/interfaces/my-calendar-animation.interface";
+export {IMyLabeledDates} from "./lib/interfaces/my-labeled-dates.interface";
 
 export {CalToggle} from "./lib/enums/cal-toggle.enum";
 export {KeyCode} from "./lib/enums/key-code.enum";
