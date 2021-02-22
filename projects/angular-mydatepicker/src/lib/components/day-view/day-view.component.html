@@ -15,11 +15,11 @@
                 'myDpNextMonth': d.cmo === nextMonthId,
                 'myDpSelectedDay':!this.opts.dateRange && isDateSame(d.dateObj) || this.opts.dateRange && isDateRangeBeginOrEndSame(d.dateObj),
                 'myDpDisabled': d.holidayDate.disabled || (d.disabledDate.disabled && !d.disabledDate.styleClass.length),
-                'myDpTableSingleDay': !d.disabledDate.disabled}"
+                'myDpTableSingleDay': !(d.disabledDate.disabled || d.holidayDate.disabled)}"
           (click)="onDayCellClicked($event, d)" (keydown)="onDayCellKeyDown($event, d)"
           (mouseenter)="onDayCellMouseEnter(d)" (mouseleave)="onDayCellMouseLeave()" [attr.tabindex]="!d.disabledDate.disabled ? 0 : -1">
         <ng-container *ngIf="d.holidayDate.holiday">
-          <span  title="{{d.holidayDate.title}}" class="{{d.holidayDate.style}}">{{d.dateObj.day}}</span>
+          <span  title="{{d.holidayDate.title}}" class="myDpDayValue">{{d.dateObj.day}}</span>
         </ng-container>
         <ng-container *ngIf="!d.holidayDate.holiday">
           <span *ngIf="d.markedDate.marked && d.markedDate.color.length" class="myDpMarkDate" [ngStyle]="{'border-top': '8px solid ' + d.markedDate.color}"></span>
