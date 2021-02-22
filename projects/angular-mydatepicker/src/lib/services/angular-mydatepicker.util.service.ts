@@ -16,6 +16,8 @@ import {KeyName} from "../enums/key-name.enum";
 import {D, DD, M, MM, MMM, YYYY, SU, MO, TU, WE, TH, FR, SA, ZERO_STR, EMPTY_STR, PIPE} from "../constants/constants";
 import { IMyLabeledDates } from '../interfaces/my-labeled-dates.interface';
 import { IMyLabeledDate } from '../interfaces/my-labeled-date.interface';
+import { IMyHolidayDates } from '../interfaces/my-holiday-dates.interface';
+import { IMyHolidayDate } from '../interfaces/my-holiday-date.interface';
 
 @Injectable()
 export class UtilService {
@@ -580,7 +582,7 @@ export class UtilService {
   }
 
   getKeyCodeFromEvent(event: any): number {
-    let key: any = event.key || event.keyCode || event.which;
+    const key: any = event.key || event.keyCode || event.which;
 
     if (this.checkKeyName(key, KeyName.enter) || key === KeyCode.enter) {
       return KeyCode.enter;
@@ -600,7 +602,7 @@ export class UtilService {
     else if (this.checkKeyName(key, KeyName.rightArrow) || key === KeyCode.rightArrow) {
       return KeyCode.rightArrow;
     }
-    else if (this.checkKeyName(key, KeyName.downArrow)|| key === KeyCode.downArrow) {
+    else if (this.checkKeyName(key, KeyName.downArrow) || key === KeyCode.downArrow) {
       return KeyCode.downArrow;
     }
     else if (this.checkKeyName(key, KeyName.tab) || key === KeyCode.tab) {
@@ -617,5 +619,16 @@ export class UtilService {
   checkKeyName(key: string, keyName: string): boolean {
     const arr: Array<string> = keyName.split(PIPE);
     return arr.indexOf(key) !== -1;
+  }
+
+  isHolidayDate(date: IMyDate, holidayDates: Array<IMyHolidayDates>, markWeekends: IMyMarkedDate): IMyHolidayDate {
+    for (const md of holidayDates) {
+      for (const d of md.dates) {
+        if (d.date.year === date.year && d.date.month === date.month && d.date.day === date.day) {
+          return {disabled: d.disabled, style: d.style, title: d.title, holiday: true};
+        }
+      }
+    }
+    return {holiday: false, disabled: false, style: '', title: ''};
   }
 }

@@ -699,6 +699,7 @@ export class CalendarComponent implements AfterViewInit, OnDestroy {
             markedDate: this.utilService.isMarkedDate(date, this.opts),
             labeledDate: this.utilService.isLabeledDate(date, this.opts.labelDates),
             highlight: this.utilService.isHighlightedDate(date, this.opts),
+            holidayDate: this.utilService.isHolidayDate(date, this.opts.holidayDates, this.opts.markWeekends),
             row: i - 1,
             col: rtl ? col-- : col++
           });
@@ -717,6 +718,7 @@ export class CalendarComponent implements AfterViewInit, OnDestroy {
             markedDate: this.utilService.isMarkedDate(date, this.opts),
             labeledDate: this.utilService.isLabeledDate(date, this.opts.labelDates),
             highlight: this.utilService.isHighlightedDate(date, this.opts),
+            holidayDate: this.utilService.isHolidayDate(date, this.opts.holidayDates, this.opts.markWeekends),
             row: i - 1,
             col: rtl ? col-- : col++
           });
@@ -741,6 +743,7 @@ export class CalendarComponent implements AfterViewInit, OnDestroy {
             markedDate: this.utilService.isMarkedDate(date, this.opts),
             labeledDate: this.utilService.isLabeledDate(date, this.opts.labelDates),
             highlight: this.utilService.isHighlightedDate(date, this.opts),
+            holidayDate: this.utilService.isHolidayDate(date, this.opts.holidayDates, this.opts.markWeekends),
             row: i - 1,
             col: rtl ? col-- : col++
           });
