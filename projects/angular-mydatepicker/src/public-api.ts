@@ -56,3 +56,9 @@ export {CalAnimation} from "./lib/enums/cal-animation.enum";
 export {HeaderAction} from "./lib/enums/header-action.enum";
 
 export * from "./lib/constants/constants";
+
+export * from './lib/components/footer-bar/footer-bar.component';
+export { FooterBarComponent } from './lib/components/footer-bar/footer-bar.component';
+
+export * from './lib/components/tenors/tenors.component';
+export { TenorsComponent } from './lib/components/tenors/tenors.component';

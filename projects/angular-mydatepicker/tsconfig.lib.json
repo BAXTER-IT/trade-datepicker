@@ -2,8 +2,8 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/lib",
-    "target": "es2015",
-    "module": "es2015",
+    "target": "es2017",
+    "module": "es2020",
     "moduleResolution": "node",
     "declaration": true,
     "sourceMap": true,
@@ -14,10 +14,12 @@
     "types": [],
     "lib": [
       "dom",
-      "es2018"
+      "es2020"
     ]
   },
   "angularCompilerOptions": {
+    "enableIvy": true,
+    "compilationMode": "partial",
     "annotateForClosureCompiler": true,
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true,
