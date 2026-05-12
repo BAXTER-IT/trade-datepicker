@@ -20,8 +20,7 @@
     "build-lib": "node scripts/delete-dist-folder.js && ng build AngularMyDatePicker && node scripts/copy-artifacts.js",
     "build-all": "node scripts/delete-dist-folder.js && ng build AngularMyDatePicker && node scripts/copy-artifacts.js && ng build",
     "test-lib": "node scripts/delete-test-output-folder.js && ng test --code-coverage=true AngularMyDatePicker",
-    "lint-lib": "ng lint AngularMyDatePicker",
-    "e2e": "ng e2e"
+    "lint-lib": "ng lint AngularMyDatePicker"
   },
   "private": false,
   "dependencies": {
@@ -44,11 +43,8 @@
     "@angular/compiler-cli": "~15.2.8",
     "@angular/language-service": "~15.2.8",
     "@types/jasmine": "~4.3.1",
-    "@types/jasminewd2": "~2.0.10",
-    "@types/node": "~8.9.4",
-    "codecov": "^3.5.0",
-    "codelyzer": "^6.0.2",
-    "fs-extra": "^8.0.1",
+    "@types/node": "^20.11.0",
+    "fs-extra": "^11.2.0",
     "jasmine-core": "~4.6.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~6.4.1",
@@ -57,11 +53,8 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "^2.0.0",
     "ng-packagr": "^15.2.2",
-    "protractor": "^7.0.0",
-    "ts-node": "~7.0.0",
-    "tsickle": "0.46.3",
+    "ts-node": "^10.9.2",
     "tslib": "^2.0.0",
-    "tslint": "~6.1.3",
     "typescript": "~4.9.5"
   }
 }
