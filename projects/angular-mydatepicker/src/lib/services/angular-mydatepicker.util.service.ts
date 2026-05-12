@@ -622,6 +622,9 @@ export class UtilService {
   }
 
   isHolidayDate(date: IMyDate, holidayDates: Array<IMyHolidayDates>, markWeekends: IMyMarkedDate): IMyHolidayDate {
+    if (!holidayDates) {
+      return {holiday: false, disabled: false, style: '', title: ''};
+    }
     for (const md of holidayDates) {
       for (const d of md.dates) {
         if (d.date.year === date.year && d.date.month === date.month && d.date.day === date.day) {
