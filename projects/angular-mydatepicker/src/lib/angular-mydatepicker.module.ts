@@ -26,7 +26,6 @@ import {TenorsComponent} from "./components/tenors/tenors.component";
     AngularMyDatePickerCalendarDirective,
     TenorsComponent
   ],
-  entryComponents: [CalendarComponent],
   exports: [
     CalendarComponent,
     SelectionBarComponent,

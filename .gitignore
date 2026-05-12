@@ -5,6 +5,10 @@ angular-tradedatepicker.iml
 # dependencies
 /node_modules
 
+# build output
+/dist
+/.angular
+
 # IDEs and editors
 /.idea
 .idea
