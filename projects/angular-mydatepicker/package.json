@@ -15,7 +15,8 @@
     "url": "trade-datepicker"
   },
   "peerDependencies": {
-    "@angular/common": "^15.2.8",
-    "@angular/core": "^15.2.8"
+    "@angular/common": "^19.0.0",
+    "@angular/core": "^19.0.0",
+    "@angular/forms": "^19.0.0"
   }
 }

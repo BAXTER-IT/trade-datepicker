@@ -9,7 +9,6 @@ import {IMyStyles} from "./my-styles.interface";
 import {IMyDivHostElement} from "./my-div-host-element.interface";
 import {IMyCalendarAnimation} from "./my-calendar-animation.interface";
 import {DefaultView} from "../enums/default-view.enum";
-import {Year} from "../enums/year.enum";
 import { IMyLabeledDates } from './my-labeled-dates.interface';
 import { IMyHolidayDates } from './my-holiday-dates.interface';
 import { IMyBTNRow } from './my-right-btn-row.interface';
@@ -47,8 +46,8 @@ export interface IMyOptions {
   openSelectorTopOfInput?: boolean;
   closeSelectorOnDateSelect?: boolean;
   closeSelectorOnDocumentClick?: boolean;
-  minYear?: Year;
-  maxYear?: Year;
+  minYear?: number;
+  maxYear?: number;
   showSelectorArrow?: boolean;
   appendSelectorToBody?: boolean;
   focusInputOnDateSelect?: boolean;

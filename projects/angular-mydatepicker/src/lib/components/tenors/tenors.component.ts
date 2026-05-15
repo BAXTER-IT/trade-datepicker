@@ -4,9 +4,10 @@ import { IMyDate } from '../../interfaces/my-date.interface';
 // import { IMyBTNRow, IMyHolidayDates, IMyLabeledDates } from '../../interfaces/tenors.interface';
 
 @Component({
-  selector: 'lib-tenors',
-  templateUrl: './tenors.component.html',
-  encapsulation: ViewEncapsulation.None
+    selector: 'lib-tenors',
+    templateUrl: './tenors.component.html',
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class TenorsComponent {
 

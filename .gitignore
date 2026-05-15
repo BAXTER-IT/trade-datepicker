@@ -5,6 +5,10 @@ angular-tradedatepicker.iml
 # dependencies
 /node_modules
 
+# build output
+/dist
+/.angular
+
 # IDEs and editors
 /.idea
 .idea
@@ -49,3 +53,10 @@ src/config.rb
 # Codekit config file
 config.codekit3
 
+  
+# Test/build artifacts  
+test-output/  
+testlib.log  
+testexample.log  
+npminstall.log  
+build.log  

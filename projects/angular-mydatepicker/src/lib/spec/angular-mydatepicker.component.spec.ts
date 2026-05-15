@@ -1,4 +1,4 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {waitForAsync, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {FormsModule} from '@angular/forms';
 import {By} from '@angular/platform-browser';
@@ -30,7 +30,8 @@ function getTodayDate(): string {
 }
 
 @Component({
-  template: '<input style="width: 400px;" class="myDateInput" type="{{inputType}}" id="myDateInput" [options]="options" name="mydate" angular-mydatepicker #dp="angular-mydatepicker" />'
+    template: '<input style="width: 400px;" class="myDateInput" type="{{inputType}}" id="myDateInput" [options]="options" name="mydate" angular-mydatepicker #dp="angular-mydatepicker" />',
+    standalone: false
 })
 class AngularMyDatepickerTestComponent {
   @ViewChild('dp') vcDp: AngularMyDatePickerDirective;
@@ -86,7 +87,7 @@ class AngularMyDatepickerTestComponent {
 }
 
 describe('AngularMyDatePickerComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [AngularMyDatepickerTestComponent],
       imports: [FormsModule, AngularMyDatePickerModule],
@@ -94,6 +95,7 @@ describe('AngularMyDatePickerComponent', () => {
     });
     fixture = TestBed.createComponent(AngularMyDatepickerTestComponent);
     comp = fixture.componentInstance;
+    fixture.detectChanges();
     de = fixture.debugElement.query(By.css('.myDateInput'));
     el = de.nativeElement;
   }));
@@ -202,7 +204,7 @@ describe('AngularMyDatePickerComponent', () => {
     fixture.detectChanges();
     let selecteddate = getElement('.myDpSelectedDay');
     expect(selecteddate).not.toBe(null);
-    expect(selecteddate.textContent).toBe('24');
+    expect(selecteddate.textContent.trim()).toBe('24');
 
     fixture.detectChanges();
     monthlabel.click();
@@ -259,8 +261,8 @@ describe('AngularMyDatePickerComponent', () => {
     let selecteddates = getElements('.myDpSelectedDay');
     expect(selecteddates).not.toBe(null);
     expect(selecteddates.length).toBe(2);
-    expect(selecteddates[0].textContent).toBe('14');
-    expect(selecteddates[1].textContent).toBe('19');
+    expect(selecteddates[0].textContent.trim()).toBe('14');
+    expect(selecteddates[1].textContent.trim()).toBe('19');
 
     fixture.detectChanges();
     let selectedrange = getElements('.myDpRangeColor');
