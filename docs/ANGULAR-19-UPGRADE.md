@@ -13,7 +13,7 @@ Both must be migrated together, in lock-step, for every Angular major version.
 
 ---
 
-## Decisions (agreed up-front)
+## Decisions
 
 | # | Topic | Decision |
 |---|---|---|
@@ -332,7 +332,7 @@ Commit: `chore: post-upgrade cleanup for Angular 19`
 Run **all** of the following and make sure each passes before merging:
 
 ```bash
-rm -rf node_modules dist
+rm -r -fo node_modules, dist
 npm ci
 
 # 1. Build the library — must produce FESM2022 + .d.ts under dist/angular-mydatepicker

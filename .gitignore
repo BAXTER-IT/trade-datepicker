@@ -53,3 +53,10 @@ src/config.rb
 # Codekit config file
 config.codekit3
 
+  
+# Test/build artifacts  
+test-output/  
+testlib.log  
+testexample.log  
+npminstall.log  
+build.log  

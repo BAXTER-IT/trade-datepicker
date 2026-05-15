@@ -1,13 +1,13 @@
 {
   "name": "trade-datepicker",
-  "version": "3.0.23",
+  "version": "4.0.0",
   "description": "Angular datepicker and date range picker",
   "keywords": [
     "Angular",
     "datepicker",
     "date range picker"
   ],
-  "author": "baxter",
+  "author": "Baxtech (Róbert Miszori)",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -20,7 +20,8 @@
     "build-lib": "node scripts/delete-dist-folder.js && ng build AngularMyDatePicker && node scripts/copy-artifacts.js",
     "build-all": "node scripts/delete-dist-folder.js && ng build AngularMyDatePicker && node scripts/copy-artifacts.js && ng build",
     "test-lib": "node scripts/delete-test-output-folder.js && ng test --code-coverage=true AngularMyDatePicker",
-    "lint-lib": "ng lint AngularMyDatePicker"
+    "lint-lib": "ng lint AngularMyDatePicker",
+    "lint": "ng lint"
   },
   "private": false,
   "dependencies": {
@@ -44,6 +45,8 @@
     "@angular/language-service": "~19.2.21",
     "@types/jasmine": "~4.3.1",
     "@types/node": "^20.11.0",
+    "angular-eslint": "21.0.1",
+    "eslint": "^9.39.1",
     "fs-extra": "^11.2.0",
     "jasmine-core": "~4.6.0",
     "jasmine-spec-reporter": "~4.2.1",
@@ -55,6 +58,7 @@
     "ng-packagr": "^19.2.2",
     "ts-node": "^10.9.2",
     "tslib": "^2.0.0",
-    "typescript": "~5.8.3"
+    "typescript": "~5.8.3",
+    "typescript-eslint": "8.46.4"
   }
 }
