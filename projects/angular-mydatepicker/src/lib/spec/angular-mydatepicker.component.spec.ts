@@ -3,7 +3,6 @@ import {waitForAsync, ComponentFixture, TestBed} from '@angular/core/testing';
 import {FormsModule} from '@angular/forms';
 import {By} from '@angular/platform-browser';
 import {Component, DebugElement, ViewChild} from '@angular/core';
-import {AngularMyDatePickerModule} from '../angular-mydatepicker.module';
 import {AngularMyDatePickerDirective} from '../angular-mydatepicker.input';
 import {IAngularMyDpOptions, IMyOptions} from '../interfaces/my-options.interface';
 import {IMyDateModel} from '../interfaces/my-date-model.interface';
@@ -90,7 +89,7 @@ describe('AngularMyDatePickerComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [AngularMyDatepickerTestComponent],
-      imports: [FormsModule, AngularMyDatePickerModule],
+      imports: [FormsModule, AngularMyDatePickerDirective],
       providers: []
     });
     fixture = TestBed.createComponent(AngularMyDatepickerTestComponent);

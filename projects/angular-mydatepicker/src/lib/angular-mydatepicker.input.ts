@@ -1,5 +1,5 @@
 import {Directive, Input, ComponentRef, ElementRef, ViewContainerRef, Renderer2, ChangeDetectorRef, 
-  ComponentFactoryResolver, forwardRef, EventEmitter, Output, SimpleChanges, OnChanges, HostListener, OnDestroy} from "@angular/core";
+  forwardRef, EventEmitter, Output, SimpleChanges, OnChanges, HostListener, OnDestroy} from "@angular/core";
 import {AbstractControl, ControlValueAccessor, NG_VALIDATORS, NG_VALUE_ACCESSOR, Validator} from "@angular/forms";
 import {CalendarComponent} from "./components/calendar/calendar.component";
 import {IMyDate} from "./interfaces/my-date.interface";
@@ -39,8 +39,7 @@ const NGX_DP_VALIDATORS = {
 @Directive({
     selector: "[angular-mydatepicker]",
     exportAs: "angular-mydatepicker",
-    providers: [UtilService, LocaleService, DefaultConfigService, NGX_DP_VALUE_ACCESSOR, NGX_DP_VALIDATORS],
-    standalone: false
+    providers: [UtilService, LocaleService, DefaultConfigService, NGX_DP_VALUE_ACCESSOR, NGX_DP_VALIDATORS]
 })
 export class AngularMyDatePickerDirective implements OnChanges, OnDestroy, ControlValueAccessor, Validator {
   @Input() options: IMyOptions;
@@ -68,7 +67,6 @@ export class AngularMyDatePickerDirective implements OnChanges, OnDestroy, Contr
   constructor(private localeService: LocaleService,
               private utilService: UtilService,
               private vcRef: ViewContainerRef,
-              private cfr: ComponentFactoryResolver,
               private renderer: Renderer2,
               private cdr: ChangeDetectorRef,
               private elem: ElementRef,
@@ -357,7 +355,7 @@ export class AngularMyDatePickerDirective implements OnChanges, OnDestroy, Contr
     this.preventClose = true;
     this.cdr.detectChanges();
     if (this.cRef === null) {
-      this.cRef = this.vcRef.createComponent(this.cfr.resolveComponentFactory(CalendarComponent));
+      this.cRef = this.vcRef.createComponent(CalendarComponent);
       this.appendSelector(this.cRef.location.nativeElement);
       this.cRef.instance.initializeComponent(
         this.opts,

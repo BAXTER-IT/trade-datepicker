@@ -1,4 +1,5 @@
 import {Component, EventEmitter, Input, OnChanges, AfterViewInit, Output, SimpleChanges, ViewEncapsulation} from "@angular/core";
+import {CommonModule} from "@angular/common";
 import {IMyCalendarMonth} from "../../interfaces/my-calendar-month.interface";
 import {IMyOptions} from "../../interfaces/my-options.interface";
 import {KeyCode} from "../../enums/key-code.enum";
@@ -11,7 +12,7 @@ import {OPTS, MONTHS} from "../../constants/constants";
     templateUrl: "./month-view.component.html",
     providers: [UtilService],
     encapsulation: ViewEncapsulation.None,
-    standalone: false
+    imports: [CommonModule]
 })
 export class MonthViewComponent implements OnChanges, AfterViewInit {
   @Input() opts: IMyOptions;

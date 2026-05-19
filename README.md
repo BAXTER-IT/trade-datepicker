@@ -71,22 +71,42 @@ To install this component to an external project, follow the procedure:
 
 1. __npm install angular-mydatepicker --save__
 
-2. Add __AngularMyDatePickerModule__ import to your __@NgModule__ as follows:
+2. From v5.0.0 the library is fully **standalone** — `AngularMyDatePickerModule` has been removed.
+   Import the `AngularMyDatePickerDirective` directly into your standalone component:
+    ```ts
+    import { Component } from '@angular/core';
+    import { FormsModule } from '@angular/forms';
+    import { AngularMyDatePickerDirective, IAngularMyDpOptions } from 'angular-mydatepicker';
+
+    @Component({
+      selector: 'app-root',
+      standalone: true,
+      imports: [FormsModule, AngularMyDatePickerDirective],
+      template: `
+        <input angular-mydatepicker name="mydate"
+               [(ngModel)]="model" [options]="myOptions" />
+      `
+    })
+    export class AppComponent {
+      myOptions: IAngularMyDpOptions = { dateFormat: 'yyyy-mm-dd' };
+      model: any = null;
+    }
+    ```
+
+   Or, in a legacy NgModule-based application, add the standalone directive directly to the module's `imports`:
     ```ts
     import { BrowserModule } from '@angular/platform-browser';
     import { NgModule } from '@angular/core';
     import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-    import { AngularMyDatePickerModule } from 'angular-mydatepicker';
-    
+    import { AngularMyDatePickerDirective } from 'angular-mydatepicker';
+
     @NgModule({
-      declarations: [
-        AppComponent
-      ],
+      declarations: [AppComponent],
       imports: [
-        BrowserModule, 
-        ReactiveFormsModule, 
-        FormsModule, 
-        AngularMyDatePickerModule
+        BrowserModule,
+        ReactiveFormsModule,
+        FormsModule,
+        AngularMyDatePickerDirective
       ],
       providers: [],
       bootstrap: [AppComponent]

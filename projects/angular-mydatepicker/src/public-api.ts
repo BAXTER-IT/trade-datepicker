@@ -1,7 +1,6 @@
 /*
  * Public API Surface of angular-mydatepicker
  */
-export {AngularMyDatePickerModule} from "./lib/angular-mydatepicker.module";
 export {AngularMyDatePickerDirective} from "./lib/angular-mydatepicker.input";
 export {CalendarComponent} from "./lib/components/calendar/calendar.component";
 export {DayViewComponent} from "./lib/components/day-view/day-view.component";
