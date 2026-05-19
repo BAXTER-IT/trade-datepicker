@@ -799,3 +799,19 @@
 
 * Merged: [Update angular-mydatepicker.locale.service.ts #57](https://github.com/kekeh/angular-mydatepicker/pull/57)
 
+
+# 5.0.0 (2026-05-19)
+
+### Bug Fixes
+
+* none
+
+### Features
+
+* Upgraded to Angular 20 (20.3.x).
+* Updated library peer dependencies (`@angular/common`, `@angular/core`, `@angular/forms`) to `^20.0.0`.
+* Bumped `@angular/cli` and `@angular-devkit/build-angular` to `~20.3.26` / `^20.3.26`.
+* Bumped `ng-packagr` to `^20.3.2`.
+* Bumped `angular-eslint` to `21.4.0` and `typescript-eslint` to `8.59.4`.
+* TypeScript stays on `~5.8.3` (Angular 20 supported range).
+

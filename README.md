@@ -55,7 +55,7 @@ Online demo is [here](http://kekeh.github.io/angular-mydatepicker)
 
 ### Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version __7.3.8__.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) and is currently built against __Angular 20__ (CLI 20.3.x).
 
 Source code of the component is in the [projects/angular-mydatepicker/src](https://github.com/kekeh/angular-mydatepicker/tree/master/projects/angular-mydatepicker/src) folder.
 
@@ -407,7 +407,7 @@ In order the following commands work you need a __git client__ and __npm__.
   1. __git clone https://github.com/kekeh/angular-mydatepicker.git__
   2. __cd angular-mydatepicker__
 
-* Install tools (version >= 7.3.8):
+* Install tools (version >= 20.3):
   1. __npm install --g @angular/cli__
 
 * Install dependencies:
