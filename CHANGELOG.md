@@ -815,3 +815,32 @@
 * Bumped `angular-eslint` to `21.4.0` and `typescript-eslint` to `8.59.4`.
 * TypeScript stays on `~5.8.3` (Angular 20 supported range).
 
+
+# 6.0.0 (2026-05-19)
+
+### Bug Fixes
+
+* none
+
+### Features
+
+* Converted all library components and directives to **standalone**, removing
+  the need for `AngularMyDatePickerModule`.
+* Switched dynamic calendar instantiation to the standalone
+  `ViewContainerRef.createComponent(Type)` API.
+* Updated example app and tests to consume the standalone directive.
+
+### Breaking Changes
+
+* Converted all library components and directives to **standalone**:
+  `AngularMyDatePickerDirective`, `AngularMyDatePickerCalendarDirective`,
+  `CalendarComponent`, `SelectionBarComponent`, `DayViewComponent`,
+  `MonthViewComponent`, `YearViewComponent`, `FooterBarComponent`,
+  `TenorsComponent`.
+* Removed `AngularMyDatePickerModule`. Import `AngularMyDatePickerDirective`
+  directly into a standalone component or NgModule's `imports` array instead.
+* Switched dynamic calendar instantiation from the deprecated
+  `ComponentFactoryResolver.resolveComponentFactory(...)` API to the
+  standalone `ViewContainerRef.createComponent(Type)` API.
+* Updated example app and tests to consume the standalone directive.
+

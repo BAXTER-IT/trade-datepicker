@@ -1,4 +1,5 @@
 import {Component, EventEmitter, Input, OnChanges, AfterViewInit, Output, ViewEncapsulation, SimpleChanges} from "@angular/core";
+import {CommonModule} from "@angular/common";
 import {IMyCalendarDay} from "../../interfaces/my-calendar-day.interface";
 import {IMyDate} from "../../interfaces/my-date.interface";
 import {IMyDateRange} from "../../interfaces/my-date-range.interface";
@@ -15,7 +16,7 @@ import {OPTS, DATES, WEEK_DAYS, SELECTED_DATE, SELECTED_DATE_RANGE} from "../../
     templateUrl: "./day-view.component.html",
     providers: [UtilService],
     encapsulation: ViewEncapsulation.None,
-    standalone: false
+    imports: [CommonModule]
 })
 export class DayViewComponent implements OnChanges, AfterViewInit {
   @Input() opts: IMyOptions;

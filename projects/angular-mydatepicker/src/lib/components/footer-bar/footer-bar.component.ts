@@ -7,8 +7,7 @@ import {OPTS, SPACE_STR, EMPTY_STR} from "../../constants/constants";
     selector: "lib-footer-bar",
     templateUrl: "./footer-bar.component.html",
     providers: [UtilService],
-    encapsulation: ViewEncapsulation.None,
-    standalone: false
+    encapsulation: ViewEncapsulation.None
 })
 export class FooterBarComponent implements OnChanges {
   @Input() opts: IMyOptions;

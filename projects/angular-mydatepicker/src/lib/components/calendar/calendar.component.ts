@@ -1,4 +1,12 @@
 import {Component, ElementRef, ViewEncapsulation, ViewChild, Renderer2, ChangeDetectorRef, AfterViewInit, OnDestroy, HostBinding} from "@angular/core";
+import {CommonModule} from "@angular/common";
+import {SelectionBarComponent} from "../selection-bar/selection-bar.component";
+import {DayViewComponent} from "../day-view/day-view.component";
+import {MonthViewComponent} from "../month-view/month-view.component";
+import {YearViewComponent} from "../year-view/year-view.component";
+import {FooterBarComponent} from "../footer-bar/footer-bar.component";
+import {TenorsComponent} from "../tenors/tenors.component";
+import {AngularMyDatePickerCalendarDirective} from "../../directives/angular-mydatepicker-calendar.directive";
 import {IMyDate} from "../../interfaces/my-date.interface";
 import {IMyDateRange} from "../../interfaces/my-date-range.interface";
 import {IMyMonth} from "../../interfaces/my-month.interface";
@@ -30,7 +38,16 @@ import {DOT, UNDER_LINE, D, M, Y, DATE_ROW_COUNT, DATE_COL_COUNT, MONTH_ROW_COUN
     styleUrls: ['../../css/angular-mydatepicker.style.css'],
     providers: [UtilService],
     encapsulation: ViewEncapsulation.None,
-    standalone: false
+    imports: [
+        CommonModule,
+        SelectionBarComponent,
+        DayViewComponent,
+        MonthViewComponent,
+        YearViewComponent,
+        FooterBarComponent,
+        TenorsComponent,
+        AngularMyDatePickerCalendarDirective
+    ]
 })
 export class CalendarComponent implements AfterViewInit, OnDestroy {
   @ViewChild("selectorEl") selectorEl: ElementRef;

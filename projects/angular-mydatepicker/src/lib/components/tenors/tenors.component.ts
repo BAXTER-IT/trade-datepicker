@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output, ViewEncapsulation } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { IAngularMyDpOptions } from '../../interfaces/my-options.interface';
 import { IMyDate } from '../../interfaces/my-date.interface';
 // import { IMyBTNRow, IMyHolidayDates, IMyLabeledDates } from '../../interfaces/tenors.interface';
@@ -7,7 +8,7 @@ import { IMyDate } from '../../interfaces/my-date.interface';
     selector: 'lib-tenors',
     templateUrl: './tenors.component.html',
     encapsulation: ViewEncapsulation.None,
-    standalone: false
+    imports: [CommonModule]
 })
 export class TenorsComponent {
 
