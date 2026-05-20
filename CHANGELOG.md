@@ -1,3 +1,26 @@
+# 7.0.0 (2026-05-20)
+
+### Bug Fixes
+
+* none
+
+### Features
+
+* Upgraded to Angular 21 (21.2.x).
+* Updated library peer dependencies (`@angular/common`, `@angular/core`, `@angular/forms`) to `^21.0.0`.
+* Bumped `@angular/cli` and `@angular-devkit/build-angular` to `~21.2.11` / `^21.2.11`.
+* Bumped `ng-packagr` to `^21.2.3`.
+* Bumped `typescript` to `~5.9.3` (Angular 21 supported range `>=5.9 <6.0`).
+* `zone.js` stays on `~0.15.1` (still supported by Angular 21).
+* `angular-eslint` (`21.4.0`) and `typescript-eslint` (`8.59.4`) unchanged.
+
+### Breaking Changes
+
+* Peer dependencies now require `@angular/common`, `@angular/core` and `@angular/forms` at `^21.0.0`.
+* Minimum supported Node.js is now `^20.19.0 || ^22.12.0 || >=24.0.0` (Angular 21 requirement).
+* TypeScript `>=5.9 <6.0` is required (Angular 21 requirement).
+
+
 # 6.0.1 (2026-05-20)
 
 ### Bug Fixes

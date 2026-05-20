@@ -55,9 +55,9 @@ Online demo is [here](http://kekeh.github.io/angular-mydatepicker)
 
 ### Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) and is currently built against __Angular 20__ (CLI 20.3.x).
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) and is currently built against __Angular 21__ (CLI 21.2.x). See the [CHANGELOG](./CHANGELOG.md) for the full upgrade history.
 
-Source code of the component is in the [projects/angular-mydatepicker/src](https://github.com/kekeh/angular-mydatepicker/tree/master/projects/angular-mydatepicker/src) folder.
+Source code of the component is in the [projects/angular-mydatepicker/src](https://github.com/BAXTER-IT/trade-datepicker/tree/master/projects/angular-mydatepicker/src) folder.
 
 
 ## Code examples
@@ -424,10 +424,10 @@ Usage examples of the __stylesData__ option:
 In order the following commands work you need a __git client__ and __npm__.
 
 * At first fork and clone this repo:
-  1. __git clone https://github.com/kekeh/angular-mydatepicker.git__
+  1. __git clone https://github.com/BAXTER-IT/trade-datepicker__
   2. __cd angular-mydatepicker__
 
-* Install tools (version >= 20.3):
+* Install tools (version >= 21.2):
   1. __npm install --g @angular/cli__
 
 * Install dependencies:
@@ -458,11 +458,21 @@ In order the following commands work you need a __git client__ and __npm__.
 ## Demo
 Online demo is [here](http://kekeh.github.io/angular-mydatepicker)
 
+## Changelog
+
+Release notes for every version are tracked in [CHANGELOG.md](./CHANGELOG.md).
+
+Recent highlights:
+- **v7.0.0** — Upgraded to **Angular 21** (21.2.x). Peer deps now require `@angular/* ^21.0.0`. Requires Node `^20.19.0 || ^22.12.0 || >=24.0.0` and TypeScript `>=5.9 <6.0`.
+- **v6.0.0** — Library converted to **standalone** components/directives; `AngularMyDatePickerModule` removed.
+- **v5.0.0** — Upgraded to **Angular 20** (20.3.x).
+
 ## License
 * [MIT](https://github.com/kekeh/angular-mydatepicker/blob/master/LICENSE)
 
 ## Author
 * kekeh
+* mrobix
 
 ## Keywords
 * datepicker
